@@ -1,6 +1,7 @@
 import pyshark
 from collections import Counter
 import sys
+import asyncio
 
 def analyze_pcap(pcap_file):
     pcap = pyshark.FileCapture(pcap_file, keep_packets=False)
@@ -151,6 +152,8 @@ def analyze_pcap(pcap_file):
 
 
 def main():
+    asyncio.set_event_loop(asyncio.new_event_loop())
+    
     if len(sys.argv) < 2:
         print("Usage: python ftanalyzer.py <pcap_file>")
         sys.exit(1)
