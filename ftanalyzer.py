@@ -2,8 +2,9 @@ import pyshark
 from collections import Counter
 import sys
 import asyncio
+import os
 
-def analyze_pcap(pcap_file):
+def analyze_pcap(pcap_file, output_file):
     pcap = pyshark.FileCapture(pcap_file, keep_packets=False)
 
     type_counter = Counter()
@@ -24,21 +25,22 @@ def analyze_pcap(pcap_file):
             if hasattr(pkt.wlan, 'da') and pkt.wlan.da == 'ff:ff:ff:ff:ff:ff':
                 broadcast_counter += 1
 
-    # Map numeric types to names
-    type_names = {0: "Management", 1: "Control", 2: "Data", 3: "Extension"}
+    with open(output_file, "w", encoding="utf-8") as output:
+        # Map numeric types to names
+        type_names = {0: "Management", 1: "Control", 2: "Data", 3: "Extension"}
 
-    print(f"Total packets analyzed: {packet_counter}\n")
+        output.write(f"Total packets analyzed: {packet_counter}\n\n")
 
-    print("Amount of packets per main frame type:")
-    for t, count in type_counter.items():
-        percentage = (count / packet_counter) * 100
-        print(f"{type_names.get(t,t)}: {count} ({percentage:.2f}%)\n")
+        output.write("Amount of packets per main frame type:\n")
+        for t, count in type_counter.items():
+            percentage = (count / packet_counter) * 100
+            output.write(f"{type_names.get(t,t)}: {count} ({percentage:.2f}%)\n\n")
 
-    # Broadcast frames
-    broadcast_percentage = (broadcast_counter / packet_counter) * 100
-    print(f"Broadcast frames: {broadcast_counter} ({broadcast_percentage:.2f}%)\n")
+        # Broadcast frames
+        broadcast_percentage = (broadcast_counter / packet_counter) * 100
+        output.write(f"Broadcast frames: {broadcast_counter} ({broadcast_percentage:.2f}%)\n\n")
 
-    subtype_names = {
+        subtype_names = {
         # --------------------
         # Management (type 0)
         # --------------------
@@ -118,50 +120,52 @@ def analyze_pcap(pcap_file):
         (3,13):  "Reserved",
         (3,14):  "Reserved",
         (3,15):  "Reserved",
-    }
+        }
 
-    # subtypes sorted in reverse order of frequency
-    sorted_subtypes = subtype_counter.most_common()
-    sorted_subtypes.reverse()
+        # subtypes sorted in reverse order of frequency
+        sorted_subtypes = subtype_counter.most_common()
+        sorted_subtypes.reverse()
 
-    print("\nAmount of packets per frame subtype:")
-    for st, count in sorted_subtypes:
-        percentage = (count / packet_counter) * 100
-        print(f"{subtype_names.get(st, f'Unknown subtype {st}')}: {count} ({percentage:.2f}%)\n")    
+        output.write("\nAmount of packets per frame subtype:\n")
+        for st, count in sorted_subtypes:
+            percentage = (count / packet_counter) * 100
+            output.write(f"{subtype_names.get(st, f'Unknown subtype {st}')}: {count} ({percentage:.2f}%)\n\n")
+
+        # frames not seen
+        output.write("\nFrame subtypes not observed in the capture:\n")
+        all_frames = set(subtype_names.keys())
+        observed_frames = set(subtype_counter.keys())
+        missing_frames = all_frames - observed_frames
+
+        for st in missing_frames:
+            output.write(f"{subtype_names.get(st, f'Unknown subtype {st}')}\n\n")
+
+        threshold = 0.10 * packet_counter
+        total_count = 0
+        output.write(f"\nBottom 10% of frame subtypes:\n")
+        for st, count in sorted_subtypes:
+            total_count += count
+            percentage = (count / packet_counter) * 100
+            output.write(f"{subtype_names.get(st, f'Unknown subtype {st}')}: {count} ({percentage:.2f}%)\n\n")
+            if total_count >= threshold:
+                break
         
-
-    # frames not seen
-    print("\nFrame subtypes not observed in the capture:")
-    all_frames = set(subtype_names.keys())
-    observed_frames = set(subtype_counter.keys())
-    missing_frames = all_frames - observed_frames
-
-    for st in missing_frames:
-        print(f"{subtype_names.get(st, f'Unknown subtype {st}')}\n")
-
-
-    threshold = 0.10 * packet_counter
-    total_count = 0
-    print(f"\nBottom 10% of frame subtypes:")
-    for st, count in sorted_subtypes:
-        total_count += count
-        percentage = (count / packet_counter) * 100
-        print(f"{subtype_names.get(st, f'Unknown subtype {st}')}: {count} ({percentage:.2f}%)\n")
-        if total_count >= threshold:
-            break
+    pcap.close()
+    print(f"Analysis complete. Results saved to '{output_file}'")
 
 
 def main():
     asyncio.set_event_loop(asyncio.new_event_loop())
-    
+
     if len(sys.argv) < 2:
         print("Usage: python ftanalyzer.py <pcap_file>")
         sys.exit(1)
-    
+
     pcap_file = sys.argv[1]
-    
+    output_file = f"{os.path.splitext(pcap_file)[0]}_results.txt"
+
     try:
-        analyze_pcap(pcap_file)
+        analyze_pcap(pcap_file, output_file)
     except FileNotFoundError:
         print(f"Error: File '{pcap_file}' not found")
         sys.exit(1)
