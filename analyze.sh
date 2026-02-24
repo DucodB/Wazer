@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Change to wireless interface capable of monitor mode
-INTERFACE="wlan0"
+INTERFACE=wlp4s0mon
 
 if ! command -v tshark > /dev/null 2>&1; then
     echo "tshark is not installed. Please install it and rerun the script."
@@ -20,16 +20,19 @@ if ! pip show pyshark > /dev/null 2>&1; then
     pip install pyshark
 fi
 
+bash switch_monitor.sh start
 LOCATION="campus"
 TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 PCAP_FILE=pcap_files/"$LOCATION"_"$TIMESTAMP".pcap
 mkdir -p "pcap_files"
 echo "Starting packet capture for 10 minutes..."
-sudo tshark -i "$INTERFACE" -I -a duration:600 -s 128 -w "$PCAP_FILE"
+sudo chmod a+r+rwx pcap_files/
+sudo tshark -i "$INTERFACE"  -a duration:600 -s 128 -w "$PCAP_FILE"
 echo Packet capture completed and stored in "$PCAP_FILE"
 echo Analyzing the pcap file...
 echo "-------------------------------------------"
-python ftanalyzer.py "$PCAP_FILE"
+python3.12 ftanalyzer.py "$PCAP_FILE"
 echo "-------------------------------------------"
 deactivate
+bash switch_monitor.sh stop
 echo "Done"
