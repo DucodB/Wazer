@@ -10,7 +10,7 @@ fi
 ENV_DIR="tshark-env"
 if [ ! -d "$ENV_DIR" ]; then
     echo "Creating virtual environment..."
-    python3 -m venv "$ENV_DIR"
+    python3.12 -m venv "$ENV_DIR"
 fi
 
 echo Activating virtual environment...
@@ -29,7 +29,7 @@ sudo tshark -i "$INTERFACE" -I -a duration:600 -s 128 -w "$PCAP_FILE"
 echo Packet capture completed and stored in "$PCAP_FILE"
 echo Analyzing the pcap file...
 echo "-------------------------------------------"
-python3 ftanalyzer.py "$PCAP_FILE"
+python ftanalyzer.py "$PCAP_FILE"
 echo "-------------------------------------------"
 deactivate
 echo "Done"
