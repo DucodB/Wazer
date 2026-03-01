@@ -1,0 +1,165 @@
+Total packets analyzed: 26946
+
+Amount of packets per main frame type:
+Management: 16695 (61.96%)
+
+Data: 5477 (20.33%)
+
+Control: 4774 (17.72%)
+
+Broadcast frames: 15440 (57.30%)
+
+
+Amount of packets per frame subtype:
+QoS CF-Ack + CF-Poll (No Data): 1 (0.00%)
+
+Data: 2 (0.01%)
+
+Block Ack (BA): 17 (0.06%)
+
+QoS Data: 84 (0.31%)
+
+Block Ack Request (BAR): 196 (0.73%)
+
+RTS: 269 (1.00%)
+
+CTS: 377 (1.40%)
+
+Probe Request: 404 (1.50%)
+
+Probe Response: 1281 (4.75%)
+
+ACK: 3915 (14.53%)
+
+Null (No Data): 5390 (20.00%)
+
+Beacon: 15010 (55.70%)
+
+
+Frame subtypes not observed in the capture:
+Reserved
+
+Reserved
+
+Data + CF-Poll
+
+Reserved
+
+Action No Ack
+
+QoS Data + CF-Ack + CF-Poll
+
+Authentication
+
+CF-End + CF-Ack
+
+DMG Beacon
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Trigger
+
+Data + CF-Ack
+
+Action
+
+QoS Data + CF-Poll
+
+Reserved
+
+Reserved
+
+Reserved
+
+Association Request
+
+ATIM
+
+Beamforming Report Poll
+
+Timing Advertisement
+
+Data + CF-Ack + CF-Poll
+
+Reserved
+
+QoS Null
+
+PS-Poll
+
+Reserved
+
+S1G Beacon
+
+Reserved
+
+Reassociation Request
+
+Control Frame Extension
+
+CF-Ack (No Data)
+
+TACK
+
+QoS CF-Poll (No Data)
+
+Reserved
+
+Reserved
+
+Association Response
+
+Disassociation
+
+CF-Ack + CF-Poll (No Data)
+
+VHT/HE NDP Announcement
+
+CF-End
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reassociation Response
+
+Deauthentication
+
+QoS Data + CF-Ack
+
+Control Wrapper
+
+CF-Poll (No Data)
+
+
+Bottom 10% of frame subtypes:
+QoS CF-Ack + CF-Poll (No Data): 1 (0.00%)
+
+Data: 2 (0.01%)
+
+Block Ack (BA): 17 (0.06%)
+
+QoS Data: 84 (0.31%)
+
+Block Ack Request (BAR): 196 (0.73%)
+
+RTS: 269 (1.00%)
+
+CTS: 377 (1.40%)
+
+Probe Request: 404 (1.50%)
+
+Probe Response: 1281 (4.75%)
+
+ACK: 3915 (14.53%)
+

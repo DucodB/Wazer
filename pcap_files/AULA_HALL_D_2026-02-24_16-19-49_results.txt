@@ -1,0 +1,189 @@
+Total packets analyzed: 140286
+
+Amount of packets per main frame type:
+Management: 119696 (85.32%)
+
+Control: 14518 (10.35%)
+
+Data: 6072 (4.33%)
+
+Broadcast frames: 105208 (75.00%)
+
+
+Amount of packets per frame subtype:
+CF-Poll (No Data): 1 (0.00%)
+
+Association Response: 1 (0.00%)
+
+Association Request: 1 (0.00%)
+
+Reassociation Request: 3 (0.00%)
+
+Deauthentication: 4 (0.00%)
+
+Disassociation: 6 (0.00%)
+
+Reassociation Response: 6 (0.00%)
+
+CF-End: 10 (0.01%)
+
+Authentication: 22 (0.02%)
+
+Action No Ack: 37 (0.03%)
+
+Block Ack Request (BAR): 48 (0.03%)
+
+VHT/HE NDP Announcement: 52 (0.04%)
+
+Trigger: 74 (0.05%)
+
+Null (No Data): 104 (0.07%)
+
+Data: 139 (0.10%)
+
+Reserved: 184 (0.13%)
+
+Block Ack (BA): 1307 (0.93%)
+
+Probe Request: 1600 (1.14%)
+
+QoS Data: 2142 (1.53%)
+
+RTS: 2230 (1.59%)
+
+QoS Null: 3686 (2.63%)
+
+CTS: 3841 (2.74%)
+
+ACK: 6956 (4.96%)
+
+Probe Response: 14302 (10.19%)
+
+Action: 25335 (18.06%)
+
+Beacon: 78195 (55.74%)
+
+
+Frame subtypes not observed in the capture:
+Reserved
+
+S1G Beacon
+
+Reserved
+
+Reserved
+
+Reserved
+
+Data + CF-Poll
+
+Reserved
+
+Control Frame Extension
+
+CF-Ack (No Data)
+
+TACK
+
+QoS Data + CF-Ack + CF-Poll
+
+QoS CF-Poll (No Data)
+
+CF-End + CF-Ack
+
+DMG Beacon
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Data + CF-Ack
+
+CF-Ack + CF-Poll (No Data)
+
+QoS Data + CF-Poll
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+ATIM
+
+Beamforming Report Poll
+
+Timing Advertisement
+
+Data + CF-Ack + CF-Poll
+
+QoS Data + CF-Ack
+
+Control Wrapper
+
+PS-Poll
+
+QoS CF-Ack + CF-Poll (No Data)
+
+
+Bottom 10% of frame subtypes:
+CF-Poll (No Data): 1 (0.00%)
+
+Association Response: 1 (0.00%)
+
+Association Request: 1 (0.00%)
+
+Reassociation Request: 3 (0.00%)
+
+Deauthentication: 4 (0.00%)
+
+Disassociation: 6 (0.00%)
+
+Reassociation Response: 6 (0.00%)
+
+CF-End: 10 (0.01%)
+
+Authentication: 22 (0.02%)
+
+Action No Ack: 37 (0.03%)
+
+Block Ack Request (BAR): 48 (0.03%)
+
+VHT/HE NDP Announcement: 52 (0.04%)
+
+Trigger: 74 (0.05%)
+
+Null (No Data): 104 (0.07%)
+
+Data: 139 (0.10%)
+
+Reserved: 184 (0.13%)
+
+Block Ack (BA): 1307 (0.93%)
+
+Probe Request: 1600 (1.14%)
+
+QoS Data: 2142 (1.53%)
+
+RTS: 2230 (1.59%)
+
+QoS Null: 3686 (2.63%)
+
+CTS: 3841 (2.74%)
+

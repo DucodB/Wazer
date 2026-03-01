@@ -1,0 +1,189 @@
+Total packets analyzed: 53022
+
+Amount of packets per main frame type:
+Management: 19705 (37.16%)
+
+Data: 16436 (31.00%)
+
+Control: 16881 (31.84%)
+
+Broadcast frames: 18378 (34.66%)
+
+
+Amount of packets per frame subtype:
+Data + CF-Poll: 1 (0.00%)
+
+QoS Data + CF-Poll: 1 (0.00%)
+
+Association Response: 1 (0.00%)
+
+QoS CF-Poll (No Data): 1 (0.00%)
+
+CF-Poll (No Data): 1 (0.00%)
+
+Reserved: 1 (0.00%)
+
+Reassociation Request: 1 (0.00%)
+
+CF-Ack + CF-Poll (No Data): 1 (0.00%)
+
+QoS Data + CF-Ack + CF-Poll: 1 (0.00%)
+
+CF-Ack (No Data): 1 (0.00%)
+
+Action No Ack: 1 (0.00%)
+
+Association Request: 1 (0.00%)
+
+Data: 11 (0.02%)
+
+Authentication: 12 (0.02%)
+
+Action: 41 (0.08%)
+
+Block Ack Request (BAR): 245 (0.46%)
+
+Block Ack (BA): 479 (0.90%)
+
+CTS: 643 (1.21%)
+
+Probe Request: 668 (1.26%)
+
+RTS: 1019 (1.92%)
+
+Probe Response: 1285 (2.42%)
+
+QoS Data: 1513 (2.85%)
+
+QoS Null: 2190 (4.13%)
+
+Null (No Data): 12714 (23.98%)
+
+ACK: 14495 (27.34%)
+
+Beacon: 17695 (33.37%)
+
+
+Frame subtypes not observed in the capture:
+Reserved
+
+S1G Beacon
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Control Frame Extension
+
+TACK
+
+CF-End + CF-Ack
+
+DMG Beacon
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Trigger
+
+Disassociation
+
+Data + CF-Ack
+
+VHT/HE NDP Announcement
+
+CF-End
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reassociation Response
+
+ATIM
+
+Beamforming Report Poll
+
+Timing Advertisement
+
+Deauthentication
+
+Data + CF-Ack + CF-Poll
+
+Control Wrapper
+
+QoS Data + CF-Ack
+
+Reserved
+
+PS-Poll
+
+QoS CF-Ack + CF-Poll (No Data)
+
+
+Bottom 10% of frame subtypes:
+Data + CF-Poll: 1 (0.00%)
+
+QoS Data + CF-Poll: 1 (0.00%)
+
+Association Response: 1 (0.00%)
+
+QoS CF-Poll (No Data): 1 (0.00%)
+
+CF-Poll (No Data): 1 (0.00%)
+
+Reserved: 1 (0.00%)
+
+Reassociation Request: 1 (0.00%)
+
+CF-Ack + CF-Poll (No Data): 1 (0.00%)
+
+QoS Data + CF-Ack + CF-Poll: 1 (0.00%)
+
+CF-Ack (No Data): 1 (0.00%)
+
+Action No Ack: 1 (0.00%)
+
+Association Request: 1 (0.00%)
+
+Data: 11 (0.02%)
+
+Authentication: 12 (0.02%)
+
+Action: 41 (0.08%)
+
+Block Ack Request (BAR): 245 (0.46%)
+
+Block Ack (BA): 479 (0.90%)
+
+CTS: 643 (1.21%)
+
+Probe Request: 668 (1.26%)
+
+RTS: 1019 (1.92%)
+
+Probe Response: 1285 (2.42%)
+
+QoS Data: 1513 (2.85%)
+

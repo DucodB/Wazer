@@ -1,0 +1,181 @@
+Total packets analyzed: 89766
+
+Amount of packets per main frame type:
+Management: 82435 (91.83%)
+
+Control: 6306 (7.02%)
+
+Data: 1025 (1.14%)
+
+Broadcast frames: 70579 (78.63%)
+
+
+Amount of packets per frame subtype:
+Association Response: 1 (0.00%)
+
+Association Request: 1 (0.00%)
+
+Authentication: 1 (0.00%)
+
+VHT/HE NDP Announcement: 4 (0.00%)
+
+Action No Ack: 5 (0.01%)
+
+Block Ack Request (BAR): 6 (0.01%)
+
+CF-End: 8 (0.01%)
+
+Trigger: 17 (0.02%)
+
+QoS Data: 35 (0.04%)
+
+Block Ack (BA): 118 (0.13%)
+
+Data: 118 (0.13%)
+
+Reserved: 143 (0.16%)
+
+Null (No Data): 170 (0.19%)
+
+RTS: 322 (0.36%)
+
+QoS Null: 702 (0.78%)
+
+CTS: 1321 (1.47%)
+
+Probe Request: 1808 (2.01%)
+
+ACK: 4510 (5.02%)
+
+Action: 8497 (9.47%)
+
+Probe Response: 11834 (13.18%)
+
+Beacon: 60145 (67.00%)
+
+
+Frame subtypes not observed in the capture:
+Reserved
+
+S1G Beacon
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reassociation Request
+
+Data + CF-Poll
+
+Reserved
+
+Control Frame Extension
+
+CF-Ack (No Data)
+
+TACK
+
+QoS Data + CF-Ack + CF-Poll
+
+QoS CF-Poll (No Data)
+
+CF-End + CF-Ack
+
+DMG Beacon
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Disassociation
+
+Data + CF-Ack
+
+CF-Ack + CF-Poll (No Data)
+
+QoS Data + CF-Poll
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reserved
+
+Reassociation Response
+
+ATIM
+
+Beamforming Report Poll
+
+Timing Advertisement
+
+Deauthentication
+
+Data + CF-Ack + CF-Poll
+
+Control Wrapper
+
+QoS Data + CF-Ack
+
+CF-Poll (No Data)
+
+PS-Poll
+
+QoS CF-Ack + CF-Poll (No Data)
+
+
+Bottom 10% of frame subtypes:
+Association Response: 1 (0.00%)
+
+Association Request: 1 (0.00%)
+
+Authentication: 1 (0.00%)
+
+VHT/HE NDP Announcement: 4 (0.00%)
+
+Action No Ack: 5 (0.01%)
+
+Block Ack Request (BAR): 6 (0.01%)
+
+CF-End: 8 (0.01%)
+
+Trigger: 17 (0.02%)
+
+QoS Data: 35 (0.04%)
+
+Block Ack (BA): 118 (0.13%)
+
+Data: 118 (0.13%)
+
+Reserved: 143 (0.16%)
+
+Null (No Data): 170 (0.19%)
+
+RTS: 322 (0.36%)
+
+QoS Null: 702 (0.78%)
+
+CTS: 1321 (1.47%)
+
+Probe Request: 1808 (2.01%)
+
+ACK: 4510 (5.02%)
+
