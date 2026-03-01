@@ -1,0 +1,60 @@
+Location: AULA_HALL_D
+
+Total packets analyzed: 363083
+
+Amount of packets per main frame type:
+Management: 318994 (87.86%)
+Control: 35142 (9.68%)
+Data: 8947 (2.46%)
+
+Broadcast frames: 276765 (76.23%)
+
+Amount of packets per frame subtype:
+Beacon: 215479 (59.35%)
+Action: 55426 (15.27%)
+Probe Response: 41833 (11.52%)
+ACK: 17893 (4.93%)
+CTS: 10904 (3.00%)
+Probe Request: 5592 (1.54%)
+QoS Null: 4759 (1.31%)
+RTS: 3677 (1.01%)
+QoS Data: 2669 (0.74%)
+Block Ack (BA): 2180 (0.60%)
+Null (No Data): 971 (0.27%)
+Data: 545 (0.15%)
+Reserved: 497 (0.14%)
+Block Ack Request (BAR): 270 (0.07%)
+Trigger: 112 (0.03%)
+VHT/HE NDP Announcement: 87 (0.02%)
+Action No Ack: 67 (0.02%)
+Authentication: 54 (0.01%)
+CF-End: 19 (0.01%)
+Reassociation Response: 15 (0.00%)
+Reassociation Request: 15 (0.00%)
+Disassociation: 6 (0.00%)
+Deauthentication: 5 (0.00%)
+Association Response: 3 (0.00%)
+Association Request: 2 (0.00%)
+QoS Data + CF-Ack: 1 (0.00%)
+QoS Data + CF-Poll: 1 (0.00%)
+CF-Poll (No Data): 1 (0.00%)
+
+Frame subtypes not observed in the combined capture set:
+ATIM
+Beamforming Report Poll
+CF-Ack (No Data)
+CF-Ack + CF-Poll (No Data)
+CF-End + CF-Ack
+Control Frame Extension
+Control Wrapper
+DMG Beacon
+Data + CF-Ack
+Data + CF-Ack + CF-Poll
+Data + CF-Poll
+PS-Poll
+QoS CF-Ack + CF-Poll (No Data)
+QoS CF-Poll (No Data)
+QoS Data + CF-Ack + CF-Poll
+S1G Beacon
+TACK
+Timing Advertisement

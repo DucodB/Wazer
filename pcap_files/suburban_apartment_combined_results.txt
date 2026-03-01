@@ -1,0 +1,60 @@
+Location: suburban_apartment
+
+Total packets analyzed: 254673
+
+Amount of packets per main frame type:
+Management: 109297 (42.92%)
+Data: 73007 (28.67%)
+Control: 72369 (28.42%)
+
+Broadcast frames: 101923 (40.02%)
+
+Amount of packets per frame subtype:
+Beacon: 98476 (38.67%)
+Null (No Data): 68405 (26.86%)
+ACK: 66490 (26.11%)
+Probe Response: 7475 (2.94%)
+Probe Request: 3176 (1.25%)
+QoS Null: 2357 (0.93%)
+CTS: 2297 (0.90%)
+QoS Data: 2210 (0.87%)
+RTS: 1772 (0.70%)
+Block Ack (BA): 966 (0.38%)
+Block Ack Request (BAR): 844 (0.33%)
+Action: 144 (0.06%)
+Data: 25 (0.01%)
+Authentication: 12 (0.00%)
+Disassociation: 10 (0.00%)
+CF-Poll (No Data): 2 (0.00%)
+Data + CF-Poll: 1 (0.00%)
+QoS Data + CF-Poll: 1 (0.00%)
+Association Response: 1 (0.00%)
+QoS CF-Poll (No Data): 1 (0.00%)
+Reserved: 1 (0.00%)
+Reassociation Request: 1 (0.00%)
+CF-Ack + CF-Poll (No Data): 1 (0.00%)
+QoS Data + CF-Ack + CF-Poll: 1 (0.00%)
+CF-Ack (No Data): 1 (0.00%)
+Action No Ack: 1 (0.00%)
+Association Request: 1 (0.00%)
+QoS CF-Ack + CF-Poll (No Data): 1 (0.00%)
+
+Frame subtypes not observed in the combined capture set:
+ATIM
+Beamforming Report Poll
+CF-End
+CF-End + CF-Ack
+Control Frame Extension
+Control Wrapper
+DMG Beacon
+Data + CF-Ack
+Data + CF-Ack + CF-Poll
+Deauthentication
+PS-Poll
+QoS Data + CF-Ack
+Reassociation Response
+S1G Beacon
+TACK
+Timing Advertisement
+Trigger
+VHT/HE NDP Announcement

@@ -1,0 +1,60 @@
+Location: EEMCS_groundFl
+
+Total packets analyzed: 999852
+
+Amount of packets per main frame type:
+Control: 766851 (76.70%)
+Management: 146063 (14.61%)
+Data: 86938 (8.70%)
+
+Broadcast frames: 118550 (11.86%)
+
+Amount of packets per frame subtype:
+CTS: 275347 (27.54%)
+RTS: 221371 (22.14%)
+ACK: 185988 (18.60%)
+Block Ack (BA): 71927 (7.19%)
+Beacon: 71608 (7.16%)
+Action: 45536 (4.55%)
+Null (No Data): 34463 (3.45%)
+QoS Null: 25959 (2.60%)
+QoS Data: 24727 (2.47%)
+Probe Response: 19043 (1.90%)
+VHT/HE NDP Announcement: 5838 (0.58%)
+Block Ack Request (BAR): 4547 (0.45%)
+Probe Request: 3780 (0.38%)
+Action No Ack: 2525 (0.25%)
+Authentication: 2435 (0.24%)
+Trigger: 1683 (0.17%)
+Data: 1651 (0.17%)
+Reassociation Request: 444 (0.04%)
+Deauthentication: 314 (0.03%)
+CF-End: 140 (0.01%)
+Reassociation Response: 135 (0.01%)
+Reserved: 130 (0.01%)
+Association Request: 56 (0.01%)
+QoS Data + CF-Poll: 52 (0.01%)
+QoS Data + CF-Ack: 38 (0.00%)
+Disassociation: 28 (0.00%)
+Association Response: 26 (0.00%)
+Data + CF-Ack: 10 (0.00%)
+PS-Poll: 10 (0.00%)
+Data + CF-Poll: 9 (0.00%)
+QoS Data + CF-Ack + CF-Poll: 7 (0.00%)
+Data + CF-Ack + CF-Poll: 5 (0.00%)
+CF-Poll (No Data): 5 (0.00%)
+ATIM: 4 (0.00%)
+QoS CF-Poll (No Data): 4 (0.00%)
+QoS CF-Ack + CF-Poll (No Data): 3 (0.00%)
+CF-Ack (No Data): 3 (0.00%)
+Timing Advertisement: 1 (0.00%)
+
+Frame subtypes not observed in the combined capture set:
+Beamforming Report Poll
+CF-Ack + CF-Poll (No Data)
+CF-End + CF-Ack
+Control Frame Extension
+Control Wrapper
+DMG Beacon
+S1G Beacon
+TACK
